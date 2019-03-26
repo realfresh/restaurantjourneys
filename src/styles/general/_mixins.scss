@@ -1,0 +1,18 @@
+// MIXINS
+@mixin breakpoint($point) {
+  @if map-has-key($breakpoints, $point) {
+    @media (min-width: #{map-get($breakpoints, $point)}) {
+      @content;
+    }
+  }
+}
+@mixin hardwareAcceleration() {
+  transform: translateZ(0) translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  perspective: 1000;
+}
+@mixin hardwareAccelerationExt($extra) {
+  transform: translateZ(0) translate3d(0, 0, 0) $extra;
+}
+

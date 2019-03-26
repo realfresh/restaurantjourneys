@@ -1,0 +1,238 @@
+html, body {
+  line-height: 1;
+  font-size: $font-size;
+  font-family: $font-body;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  line-height: 1;
+  font-family: $font-heading;
+}
+
+p, small {
+  line-height: 1;
+}
+
+li {
+  line-height: 1.4;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.paragraph {
+  line-height: 1.4;
+}
+
+ul {
+  padding-left: 30px;
+  list-style: disc;
+}
+
+h1 {
+  font-size: 32px;
+  @include breakpoint(md) {
+    font-size: 36px;
+  }
+  @include breakpoint(lg) {
+    font-size: 40px;
+  }
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+  &.small {
+    font-size: 16px;
+  }
+}
+
+p {
+  font-size: $font-size;
+  &.big {
+    font-size: $font-size + 2;
+  }
+  &.bigger {
+    font-size: $font-size + 4;
+  }
+  &.small1 {
+    font-size: $font-size - 1;
+  }
+  &.small {
+    font-size: $font-size - 2;
+  }
+  &.smaller {
+    font-size: $font-size - 3;
+  }
+  white-space: pre-line;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.link {
+  text-decoration: underline;
+  color: $primary-color;
+}
+
+// HELPERS
+.font-bold {
+  font-weight: 900;
+}
+.font-semi-bold {
+  font-weight: 600;
+}
+.font-regular {
+  font-weight: 400;
+}
+.font-light {
+  font-weight: 300;
+}
+
+.line-height-lg {
+  line-height: 25px;
+}
+.line-height-xl {
+  line-height: 32px;
+}
+
+.line-height-0 {
+  line-height: 0;
+}
+.line-height-1 {
+  line-height: 1;
+}
+
+.lh0 {
+  line-height: 0;
+}
+.lh1 {
+  line-height: 1;
+}
+.lhp {
+  line-height: 1.4;
+}
+.lhp-sm {
+  line-height: 1.2;
+}
+.lhp-lg {
+  line-height: 1.6;
+}
+
+.wba {
+  word-break: break-all;
+}
+
+.italic {
+  font-style: italic;
+}
+.underline {
+  text-decoration: underline;
+}
+.tdn {
+  text-decoration: none;
+}
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+.letter-spacing-3 {
+  letter-spacing: 3px;
+}
+
+// TEXT ALIGN
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.text-center-sm-l {
+  text-align: center;
+  @include breakpoint(tablet) {
+    text-align: left;
+  }
+}
+.text-left-sm {
+  @include breakpoint(phone) {
+    text-align: left;
+  }
+}
+.text-center-sm {
+  text-align: center;
+  @include breakpoint(phone) {
+    text-align: left;
+  }
+}
+.text-center-md {
+  text-align: center;
+  @include breakpoint(md) {
+    text-align: left;
+  }
+}
+.text-md-justify {
+  text-align: left;
+  @include breakpoint(md) {
+    text-align: justify;
+  }
+}
+
+$font-size-list: (
+        10: 10px,
+        12: 12px,
+        14: 14px,
+        16: 16px,
+        18: 18px,
+        20: 20px,
+        22: 22px,
+        24: 24px,
+        26: 26px,
+        28: 28px,
+        30: 30px,
+        34: 34px,
+        38: 38px,
+        40: 40px,
+        48: 48px,
+        64: 64px,
+        128: 128px,
+);
+
+@each $name, $size in $font-size-list {
+  .font#{$name} {
+    font-size: $size !important;
+  }
+}
+
+.success-text {
+  color: #51a351 !important;
+}
+.warning-text {
+  color: #f89406 !important;
+}
+.error-text {
+  color: #bd362f !important;
+}
+.success-bg {
+  background: #51a351 !important;
+  color: white !important;
+}
+.warning-bg {
+  background: #f89406 !important;
+  color: white !important;
+}
+.error-bg {
+  background: #bd362f !important;
+  color: white !important;
+}

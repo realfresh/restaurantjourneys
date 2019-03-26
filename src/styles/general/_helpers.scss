@@ -1,0 +1,321 @@
+// IMAGES
+.res-img {
+  max-width: 100%;
+  height: auto;
+}
+.res-img2 {
+  width: 100%;
+  height: auto;
+}
+.res-img3 {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+.thumbnail-img {
+  width: 100%;
+  max-width: 200px;
+}
+.thumbnail-32 {
+  width: 32px;
+  height: 32px;
+}
+.thumbnail-48 {
+  width: 48px;
+  height: 48px;
+}
+.thumbnail-64 {
+  width: 64px;
+  height: 64px;
+}
+
+// MAX-WIDTHS
+@each $width-name, $width in $widths-list {
+  .min#{$width-name} {
+    min-width: $width !important;
+  }
+  .max#{$width-name} {
+    max-width: $width !important;
+  }
+  .width#{$width-name} {
+    width: $width !important;
+  }
+  .minh#{$width-name} {
+    min-height: $width !important;
+  }
+  .maxh#{$width-name} {
+    max-height: $width !important;
+  }
+  .height#{$width-name} {
+    height: $width !important;
+  }
+}
+
+.width-auto {
+  width: auto !important;
+}
+.height-auto {
+  height: auto !important;
+}
+
+// DISPLAY & LAYOUT
+.relative {
+  position: relative;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline-block;
+}
+.inline-block {
+  display: inline-block !important;
+}
+.center {
+  margin: 0 auto;
+}
+.width100 {
+  width: 100% !important;
+}
+.width50 { width: 50% !important; }
+.height100 {
+  height: 100% !important;
+}
+
+// ROUND
+.round-sm {
+  border-radius: 3px;
+}
+.round-sm-top {
+  border-radius: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.round-sm-bottom {
+  border-radius: 0;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.round-sm-left {
+  border-radius: 0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.round-sm-right {
+  border-radius: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.round {
+  border-radius: 5px;
+}
+.round-top {
+  border-radius: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.round-bottom {
+  border-radius: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.round-left {
+  border-radius: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.round-right {
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.round-circle {
+  border-radius: 50% !important;
+}
+
+.round-top-sm {
+  border-radius: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.round-bottom-sm {
+  border-radius: 0;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.round-left-sm {
+  border-radius: 0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.round-right-sm {
+  border-radius: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.no-round {
+  border-radius: 0 !important;
+}
+.no-round-top {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+.no-round-bottom {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.no-round-left {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+.no-round-right {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.no-round-top-left {
+  border-top-left-radius: 0 !important;
+}
+.no-round-top-right {
+  border-top-right-radius: 0 !important;
+}
+.no-round-bottom-left {
+  border-bottom-left-radius: 0 !important;
+}
+.no-round-bottom-right {
+  border-bottom-right-radius: 0 !important;
+}
+
+// RESPONSIVE SHOW HIDES
+@each $breakpoint, $width in $breakpoints {
+  .hide-below-#{$breakpoint} {
+    display: none !important;
+    @include breakpoint($breakpoint) {
+      display: initial !important;
+    }
+  }
+  .hide-above-#{$breakpoint} {
+    display: initial !important;
+    @include breakpoint($breakpoint) {
+      display: none !important;
+    }
+  }
+  .hide-below-flex-#{$breakpoint} {
+    display: none !important;
+    @include breakpoint($breakpoint) {
+      display: flex !important;
+    }
+  }
+  .hide-above-flex-#{$breakpoint} {
+    display: flex !important;
+    @include breakpoint($breakpoint) {
+      display: none !important;
+    }
+  }
+}
+
+// CURSORS
+.cursor {
+  cursor: pointer;
+}
+.cursor-move {
+  cursor: move;
+}
+.not-allowed {
+  cursor: not-allowed;
+}
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+// OVERFLOWS
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+// ANIMATION HELPERS
+.ani-duration-quick {
+  animation-duration: 0.33s !important;
+}
+
+.zindex-10 {
+  z-index: 10;
+}
+.zindex-15 {
+  z-index: 15;
+}
+.zindex-100 {
+  z-index: 100 !important;
+}
+
+// TEXT
+.text-break-none {
+  white-space: nowrap;
+}
+
+.no-border {
+  border: none !important;
+}
+.nb-t { border-top: none !important; }
+.nb-b { border-bottom: none !important; }
+.nb-l { border-left: none !important; }
+.nb-r { border-right: none !important; }
+
+.no-border-top {
+  border-top: none !important;
+}
+.no-border-t {
+  border-top: none !important;
+}
+.no-border-l { border-left: none !important; }
+.no-border-r { border-right: none !important; }
+.no-border-lr {
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.no-border-bottom {
+  border-bottom: none !important;
+}
+
+.break-word {
+  word-break: break-all !important;
+}
+
+@each $breakpoint, $width in $breakpoints {
+
+  .hide-#{$breakpoint} {
+    @include breakpoint($breakpoint) {
+      display: none;
+    }
+  }
+
+  .show-#{$breakpoint} {
+    display: none;
+    @include breakpoint($breakpoint) {
+      display: block;
+    }
+  }
+
+  .show-#{$breakpoint}-flex {
+    display: none;
+    @include breakpoint($breakpoint) {
+      display: flex;
+    }
+  }
+
+}

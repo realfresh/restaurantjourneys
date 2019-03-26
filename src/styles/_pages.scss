@@ -1,0 +1,30 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  scroll-behavior: auto;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  li {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+}
+
+.bg-white {
+  background: white;
+}
+.bg-beige {
+  background: #FFF9F4;
+}
+.bg-beige-2 {
+  background: darken(#FFF9F4, 4%);
+}

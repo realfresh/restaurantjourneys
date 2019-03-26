@@ -1,0 +1,176 @@
+
+
+// REGULAR GRID
+@each $grid-size, $size in $grid-sizes {
+
+  .grid-#{$size} {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @each $grid-gap, $gap in $grid-gaps {
+      &.#{$grid-gap}-gap {
+        .col {
+          margin-bottom: $gap;
+        }
+      }
+    }
+
+    .col {
+      width: 100%;
+      margin-bottom: 50px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @each $breakpoint, $width in $breakpoints {
+      &.#{$breakpoint} {
+        @include breakpoint($breakpoint) {
+          flex-direction: row;
+          $parts-percent: (100 / $size) + "%";
+
+          @each $grid-gap, $gap in $grid-gaps {
+            $total-gap-size: ($size - 1) * $gap;
+            $width-modifier-size: $total-gap-size / $size;
+            &.#{$grid-gap}-gap {
+              .col {
+                width: calc(#{$parts-percent} - #{$width-modifier-size});
+              }
+            }
+          }
+
+          .col {
+            $total-gap: ($size - 1) * 50px;
+            $width-modifier: $total-gap / $size;
+            width: calc(#{$parts-percent} - #{$width-modifier});
+            &:nth-last-child(-n + #{$size}) {
+              margin-bottom: 0;
+            }
+          }
+
+
+          &.stretch-vertical {
+            align-items: stretch;
+          }
+
+          &.reverse {
+            flex-direction: row-reverse;
+          }
+
+        }
+      }
+    }
+
+  }
+
+}
+
+// RESPONSIVE GRID
+@each $grid-size, $size in $grid-responsive-sizes {
+
+  .grid-#{$size}-2 {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @each $grid-gap, $gap in $grid-gaps {
+      &.#{$grid-gap}-gap {
+        .col {
+          margin-bottom: $gap;
+        }
+      }
+      &.#{$grid-gap}-b-gap-10 {
+        .col {
+          margin-bottom: $gap - 10;
+        }
+      }
+    }
+
+    .col {
+      width: 100%;
+      margin-bottom: 50px;
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    @each $breakpoint, $width in $breakpoints {
+
+      &.#{$breakpoint}-#{$size} {
+        @include breakpoint($breakpoint) {
+          flex-direction: row;
+          $parts-percent: (100 / $size) + "%";
+
+          @each $grid-gap, $gap in $grid-gaps {
+            $total-gap-size: ($size - 1) * $gap;
+            $width-modifier-size: $total-gap-size / $size;
+            &.#{$grid-gap}-gap {
+              .col {
+                width: calc(#{$parts-percent} - #{$width-modifier-size});
+              }
+            }
+            &.#{$grid-gap}-gap-10 {
+              .col {
+                width: calc(#{$parts-percent} - #{$width-modifier-size} + 10px);
+              }
+            }
+          }
+
+          .col {
+            $total-gap: ($size - 1) * 50px;
+            $width-modifier: $total-gap / $size;
+            width: calc(#{$parts-percent} - #{$width-modifier});
+            &:nth-last-child(-n + #{$size}) {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+      &.#{$breakpoint}-2 {
+        @include breakpoint($breakpoint) {
+          flex-direction: row;
+          $parts-percent: 50%;
+
+          @each $grid-gap, $gap in $grid-gaps {
+            $total-gap-size: (2 - 1) * $gap;
+            $width-modifier-size: $total-gap-size / 2;
+            &.#{$grid-gap}-gap {
+              .col {
+                width: calc(#{$parts-percent} - #{$width-modifier-size});
+              }
+            }
+            &.#{$grid-gap}-gap-10 {
+              .col {
+                width: calc(#{$parts-percent} - #{$width-modifier-size} + 10px);
+              }
+            }
+          }
+
+          .col {
+            $total-gap: (2 - 1) * 50px;
+            $width-modifier: $total-gap / 2;
+            width: calc(#{$parts-percent} - #{$width-modifier});
+            &:nth-last-child(-n + #{2}) {
+              margin-bottom: 0;
+            }
+          }
+          &.stretch-vertical {
+            align-items: stretch;
+          }
+          &.reverse {
+            flex-direction: row-reverse;
+          }
+        }
+      }
+
+    }
+
+  }
+
+}
