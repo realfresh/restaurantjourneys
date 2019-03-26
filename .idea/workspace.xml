@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f643a83-648a-4094-96d9-0aeadd610e19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/restaurantjourneys.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/restaurantjourneys.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/seo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/seo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/html.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/404.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/blog_post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/blog_post.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -32,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/html.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="98" lean-forward="true" selection-start-line="14" selection-start-column="98" selection-end-line="14" selection-end-column="98" />
+            <state relative-caret-position="595">
+              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -41,31 +32,79 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gatsby-config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-629">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/blog_post.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="118" column="17" lean-forward="true" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
+            <state relative-caret-position="561">
+              <caret line="120" column="66" selection-start-line="120" selection-start-column="66" selection-end-line="120" selection-end-column="66" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
+                <element signature="n#!!block;n#Props#0" />
+                <element signature="n#!!block;n#data#0;n#!!block;n#Props#0" />
                 <element signature="n#!!block;n#contentfulBlogArticle#0;n#!!block;n#data#0;n#!!block;n#Props#0" />
+                <element signature="e#4#88#0" />
+                <element signature="e#39#86#0" />
+                <element signature="e#4#729#0" />
+                <element signature="e#11#85#0" />
+                <element signature="e#91#161#0" />
+                <element signature="e#167#237#0" />
+                <element signature="e#243#292#0" />
+                <element signature="e#297#367#0" />
+                <element signature="e#377#477#0" />
+                <element signature="e#408#473#0" />
+                <element signature="e#484#536#0" />
+                <element signature="e#541#598#0" />
+                <element signature="e#605#727#0" />
+                <element signature="e#1951#2360#0" />
+                <element signature="e#1981#2344#0" />
+                <element signature="e#2149#2329#0" />
+                <element signature="e#2494#2942#0" />
+                <element signature="e#2522#2928#0" />
+                <element signature="e#2585#2912#0" />
+                <element signature="e#3543#3660#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="79" column="86" selection-start-line="79" selection-start-column="86" selection-end-line="79" selection-end-column="86" />
+            <state relative-caret-position="224">
+              <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
               <folding>
+                <element signature="e#0#30#0" expanded="true" />
                 <element signature="e#4#340#0" />
                 <element signature="e#179#227#0" />
                 <element signature="e#238#265#0" />
                 <element signature="e#300#338#0" />
                 <element signature="e#4#107#0" />
                 <element signature="e#57#105#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/index.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+              <folding>
+                <element signature="e#117#255#1" />
+                <element signature="e#270#332#1" />
+                <element signature="e#358#406#1" />
+                <element signature="e#420#549#1" />
+                <element signature="e#565#1088#1" />
               </folding>
             </state>
           </provider>
@@ -82,6 +121,7 @@
       <find>placeholder</find>
       <find>res-img</find>
       <find>contentful</find>
+      <find>console.l</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -116,14 +156,15 @@
         <option value="$PROJECT_DIR$/gatsby-node.js" />
         <option value="$PROJECT_DIR$/tslint.json" />
         <option value="$PROJECT_DIR$/src/html.js" />
-        <option value="$PROJECT_DIR$/src/styles/index.scss" />
         <option value="$PROJECT_DIR$/src/styles/general/_type.scss" />
         <option value="$PROJECT_DIR$/src/components/header.tsx" />
         <option value="$PROJECT_DIR$/src/pages/404.tsx" />
         <option value="$PROJECT_DIR$/src/layouts/footer.tsx" />
+        <option value="$PROJECT_DIR$/src/styles/index.scss" />
+        <option value="$PROJECT_DIR$/src/components/tag.tsx" />
+        <option value="$PROJECT_DIR$/src/templates/blog_post.tsx" />
         <option value="$PROJECT_DIR$/gatsby-config.js" />
         <option value="$PROJECT_DIR$/src/components/seo.tsx" />
-        <option value="$PROJECT_DIR$/src/templates/blog_post.tsx" />
         <option value="$PROJECT_DIR$/src/pages/index.tsx" />
       </list>
     </option>
@@ -152,17 +193,6 @@
             <path>
               <item name="restaurantjourneys" type="b2602c69:ProjectViewProjectNode" />
               <item name="restaurantjourneys" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restaurantjourneys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="restaurantjourneys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restaurantjourneys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="restaurantjourneys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -224,12 +254,12 @@
       <workItem from="1553518950935" duration="4232000" />
       <workItem from="1553523201981" duration="7541000" />
       <workItem from="1553566580954" duration="18496000" />
-      <workItem from="1553597423661" duration="5426000" />
+      <workItem from="1553597423661" duration="7268000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35695000" />
+    <option name="totallyTimeSpent" value="37537000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="168" width="1920" height="1050" extended-state="6" />
@@ -645,20 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="64" column="17" lean-forward="true" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
-          <folding>
-            <element signature="e#117#255#1" />
-            <element signature="e#270#332#1" />
-            <element signature="e#358#406#1" />
-            <element signature="e#420#549#1" />
-            <element signature="e#565#1088#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/404.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -669,39 +685,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/html.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="98" lean-forward="true" selection-start-line="14" selection-start-column="98" selection-end-line="14" selection-end-column="98" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/layouts/footer.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="51" column="12" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/seo.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#151#181#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -727,22 +716,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="e#117#255#1" />
+            <element signature="e#270#332#1" />
+            <element signature="e#358#406#1" />
+            <element signature="e#420#549#1" />
+            <element signature="e#565#1088#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/tag.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#8#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/html.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/blog_post.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="118" column="17" lean-forward="true" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
+        <state relative-caret-position="561">
+          <caret line="120" column="66" selection-start-line="120" selection-start-column="66" selection-end-line="120" selection-end-column="66" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
+            <element signature="n#!!block;n#Props#0" />
+            <element signature="n#!!block;n#data#0;n#!!block;n#Props#0" />
             <element signature="n#!!block;n#contentfulBlogArticle#0;n#!!block;n#data#0;n#!!block;n#Props#0" />
+            <element signature="e#4#88#0" />
+            <element signature="e#39#86#0" />
+            <element signature="e#4#729#0" />
+            <element signature="e#11#85#0" />
+            <element signature="e#91#161#0" />
+            <element signature="e#167#237#0" />
+            <element signature="e#243#292#0" />
+            <element signature="e#297#367#0" />
+            <element signature="e#377#477#0" />
+            <element signature="e#408#473#0" />
+            <element signature="e#484#536#0" />
+            <element signature="e#541#598#0" />
+            <element signature="e#605#727#0" />
+            <element signature="e#1951#2360#0" />
+            <element signature="e#1981#2344#0" />
+            <element signature="e#2149#2329#0" />
+            <element signature="e#2494#2942#0" />
+            <element signature="e#2522#2928#0" />
+            <element signature="e#2585#2912#0" />
+            <element signature="e#3543#3660#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/react-helmet/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/seo.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <element signature="e#151#181#0" expanded="true" />
+            <element signature="e#834#857#0" />
+            <element signature="e#965#1678#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="79" column="86" selection-start-line="79" selection-start-column="86" selection-end-line="79" selection-end-column="86" />
+        <state relative-caret-position="224">
+          <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
           <folding>
+            <element signature="e#0#30#0" expanded="true" />
             <element signature="e#4#340#0" />
             <element signature="e#179#227#0" />
             <element signature="e#238#265#0" />
@@ -750,6 +815,13 @@
             <element signature="e#4#107#0" />
             <element signature="e#57#105#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-629">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
         </state>
       </provider>
     </entry>

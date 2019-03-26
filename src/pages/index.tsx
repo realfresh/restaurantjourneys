@@ -60,7 +60,9 @@ const Page = (props: Props) => {
 
   return (
     <Index>
-      <SEO title="Restaurant Journeys | Start, Manage, Market & Grow Your Business" titleRaw={true}/>
+      <SEO title="Restaurant Journeys | Start, Manage, Market & Grow Your Business" titleRaw={true}>
+        <link rel="canonical" href="https://www.restaurantjourneys.com" />
+      </SEO>
       <Header>
         <div className="text-center m-b-6">
           <h1>Start, Manage, Market & Grow Your Restaurant</h1>

@@ -16,6 +16,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -59,7 +60,7 @@ module.exports = {
         serialize: ({ site, allSitePage }) =>
           allSitePage.edges.map(edge => {
             return {
-              url: site.siteMetadata.siteUrl + edge.node.path,
+              url: edge.node.path === "/" ? "" : (site.siteMetadata.siteUrl + edge.node.path),
               changefreq: edge.node.path === "/" ? "weekly" : "monthly",
               priority: edge.node.path === "/" ? 1 : 0.7,
             }

@@ -16,9 +16,10 @@ interface Props {
   keywords?: string[]
   title: string
   titleRaw?: boolean
+  children?: React.ReactNode
 }
 
-function SEO({ description, lang, meta, keywords, title, titleRaw }: Props) {
+function SEO({ description, lang, meta, keywords, title, titleRaw, children }: Props) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -84,8 +85,9 @@ function SEO({ description, lang, meta, keywords, title, titleRaw }: Props) {
               }
             : []
         )
-        .concat(meta || [])}
-    />
+        .concat(meta || [])}>
+      {children}
+    </Helmet>
   )
 }
 

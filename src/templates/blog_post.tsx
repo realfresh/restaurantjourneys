@@ -105,7 +105,6 @@ export default ({ data, location }: Props) => {
             {documentToReactComponents(post.body.json, {
               renderNode: {
                 [BLOCKS.EMBEDDED_ASSET]: (node, children) => {
-                  console.log(node.data.target.fields)
                   const url = node.data.target.fields.file["en-US"].url
                   const alt = node.data.target.fields.title["en-US"]
                   return (
@@ -119,7 +118,7 @@ export default ({ data, location }: Props) => {
                 <h4 className="font34 m-t-12">Related Posts</h4>
                 <ul>
                   {post.relatedPosts.map((p, i) => (
-                    <li><Link to={`/blog/${p.permalink}`}>{p.title}</Link></li>
+                    <li key={i}><Link to={`/blog/${p.permalink}`}>{p.title}</Link></li>
                   ))}
                 </ul>
               </>
