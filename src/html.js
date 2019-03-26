@@ -13,6 +13,17 @@ export default function HTML(props) {
         />
         {props.headComponents}
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"/>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136973579-1"/>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-136973579-1');
+            `
+          }}
+        />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}

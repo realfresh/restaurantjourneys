@@ -70,20 +70,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-typescript`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-136973579-1",
-        head: false,
-        anonymize: true,
-        respectDNT: true,
-        // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
-        // experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
-        // variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
-        // Any additional create only fields (optional)
-        cookieDomain: "restaurantjourneys.com",
-      },
-    },
-    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `fnjgykqkbh7b`,

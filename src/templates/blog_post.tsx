@@ -88,7 +88,9 @@ export default ({ data, location }: Props) => {
   const post = data.contentfulBlogArticle
   return (
     <Layout>
-      <SEO title={post.documentTitle} description={post.documentMeta}/>
+      <SEO title={post.documentTitle} description={post.documentMeta}>
+        <link rel="canonical" href={"https://" + location.host + "/blog/" + post.permalink} />
+      </SEO>
       <Header height={340}>
         <div className="text-center">
           <h1 className="lhp">{post.title}</h1>
