@@ -80,7 +80,7 @@ const Page = (props: Props) => {
                     <h3>{node.title}</h3>
                     <p className="m-t-2 lhp">{node.documentMeta}</p>
                     <div className="bottom flex-l-r-center">
-                      <Tag className="smaller m-t-3">{node.category}</Tag>
+                      <Tag className="smaller m-t-3 m-r-2">{node.category}</Tag>
                       <Tag className="smaller m-t-3">{new Date(node.createdAt).toLocaleDateString()}</Tag>
                     </div>
                   </Post>

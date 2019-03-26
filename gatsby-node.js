@@ -27,7 +27,6 @@ exports.createPages = ({ graphql, actions }) => {
       const posts = result.data.allContentfulBlogArticle.edges;
 
       posts.forEach(({ node }) => {
-        console.log(node);
         createPage({
           path: "/blog/" + node.permalink,
           component: path.resolve(`./src/templates/blog_post.tsx`),
@@ -48,7 +47,6 @@ exports.onCreatePage = ({ page, actions }) => {
   const oldPage = Object.assign({}, page)
   // Remove trailing slash unless page is /
   page.path = replacePath(page.path)
-  console.log(page.path);
   if (page.path !== oldPage.path) {
     // Replace new page with old page
     deletePage(oldPage)
