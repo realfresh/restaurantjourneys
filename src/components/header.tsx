@@ -16,14 +16,14 @@ const HeaderNode = styled.header<{ height?: number }>`
   }
 `
 
-interface Props {
+interface Props extends React.HTMLAttributes<HTMLHeadingElement> {
   children: React.ReactNode
   height?: number
 }
 
 export const Header = (props: Props) => {
   return (
-    <HeaderNode className="bg-beige" height={props.height}>
+    <HeaderNode className="bg-beige" height={props.height} {...props}>
       <div className="content">
         {props.children}
       </div>

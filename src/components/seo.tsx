@@ -15,9 +15,10 @@ interface Props {
   meta?: Array<{ name: string, content: string }>
   keywords?: string[]
   title: string
+  titleRaw?: boolean
 }
 
-function SEO({ description, lang, meta, keywords, title }: Props) {
+function SEO({ description, lang, meta, keywords, title, titleRaw }: Props) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -40,7 +41,7 @@ function SEO({ description, lang, meta, keywords, title }: Props) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={titleRaw ? `%s` : `%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,

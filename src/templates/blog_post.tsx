@@ -1,13 +1,16 @@
 import * as React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql, Link, PageRendererProps } from "gatsby"
 import Layout from "../layouts"
 import { Header } from "../components/header"
 import styled from "styled-components"
 import { BLOCKS } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import SEO from "../components/seo"
+import { Tag } from "../components/tag"
 
-interface Props {
+const Disqus = require("disqus-react")
+
+interface Props extends PageRendererProps {
   data: {
     contentfulBlogArticle: {
       id: string;
@@ -23,13 +26,6 @@ interface Props {
     }
   }
 }
-
-const Tag = styled("div")`
-  background: #eeeeee;
-  font-size: 14px;
-  padding: 6px 9px;
-  border-radius: 5px;
-`
 
 const MainNode = styled("main")`
   padding: 60px 20px;
@@ -88,7 +84,7 @@ const ArticleSection = styled("article")`
   }
 `
 
-export default ({ data }: Props) => {
+export default ({ data, location }: Props) => {
   const post = data.contentfulBlogArticle
   return (
     <Layout>
@@ -129,10 +125,16 @@ export default ({ data }: Props) => {
               </>
             )}
           </ArticleSection>
-          <div className="m-t-6">
+          <div className="m-t-16">
             <div className="addthis_inline_share_toolbox"/>
           </div>
-          <div id="commento"/>
+          <div className="m-t-8">
+            <Disqus.DiscussionEmbed shortname="restaurantjourneys" config={{
+              url: location.href,
+              identifier: post.id,
+              title: post.title,
+            }}/>
+          </div>
         </div>
       </MainNode>
     </Layout>

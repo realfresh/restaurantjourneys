@@ -1,14 +1,19 @@
 import * as React from "react"
 
-import Index from "../layouts"
+import Layout from "../layouts"
 import SEO from "../components/seo"
+import { Header } from "../components/header"
 
-const NotFoundPage = () => (
-  <Index>
+export default () => (
+  <Layout>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Index>
+    <Header height={400} className="bg-white" style={{marginBottom: "-60px"}}>
+      <div className="content max600">
+        <div>
+          <h1 className="lhp m-b-3">404 - NOT FOUND</h1>
+          <p className="lhp">You just hit a route that doesn't exist... the sadness.</p>
+        </div>
+      </div>
+    </Header>
+  </Layout>
 )
-
-export default NotFoundPage

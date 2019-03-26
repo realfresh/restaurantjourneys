@@ -7,37 +7,64 @@ interface Props {
   children: React.ReactNode
 }
 
-const FooterNode = styled.footer`
-  padding: 40px 20px 30px 20px;
+const CTABar = styled.div`
   .content {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
     width: 100%;
   }
 `
 
+const FooterNode = styled.footer`
+  padding: 40px 20px 30px 20px;
+  .content {
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+  }
+`
+
+const SubscribeButton = styled.div`
+  display: inline-block;
+  background: #C34545;
+  color: white;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 160px;
+`
+
 export const Footer = () => (
   <>
-    <div className="bg-beige-2 p-lr-4 p-tb-6 m-t-12">
-      <div className="text-center">
-        <p className="font-semi-bold m-b-4 big">Subscribe for blog post updates</p>
-        <iframe frameBorder="0" scrolling="no" marginHeight={0} marginWidth={0} src="https://app.mailjet.com/widget/iframe/2mUr/bRE" width="100%" height="50"/>
+    <CTABar className="bg-beige-2 p-lr-4 p-tb-6 m-t-12">
+      <div className="content text-center flex-center">
+        <a href="https://landing.mailerlite.com/webforms/landing/g2a5r1" target="_blank">
+          <SubscribeButton>
+            Subscribe To Blog
+          </SubscribeButton>
+        </a>
+        <a href="https://www.facebook.com/groups/819348868432758/" target="_blank" className="m-l-4">
+          <SubscribeButton>
+            Facebook Group
+          </SubscribeButton>
+        </a>
       </div>
-    </div>
+    </CTABar>
     <FooterNode className="bg-beige">
-      <div className="content text-center">
-        <img className="logo res-img m-b-6 max250" alt="Logo" src="/images/logo-black-380.png"/>
-        <p className="lhp big">RestaurantJourneys is a blog and editorial dedicated to helping restaurant owners succeed in business</p>
-        <p className="lhp m-tb-6">Sponsored by <a className="link" href="https://www.cloudwaitress.com">CloudWaitress - Online Ordering System</a></p>
-        <div className="flex-center">
-          <a className="font30 m-r-2"><FaFacebookSquare/></a>
-          <a className="font30"><FaTwitterSquare/></a>
+      <div className="content">
+        <img className="logo res-img max50 m-b-4" alt="Logo" src="/images/logo-icon-110.png"/>
+        <div>
+          <p className="lhp-lg big">RestaurantJourneys is a blog and editorial dedicated to helping restaurant owners succeed in business</p>
+          <p className="lhp-lg m-t-3">Sponsored by <a className="link" href="https://www.cloudwaitress.com">CloudWaitress - Online Ordering System</a></p>
+          <div className="m-t-4">
+            <a className="primary-text font34 m-r-2" href="https://www.facebook.com/Restaurant-Journeys-663785897390499" target="_blank"><FaFacebookSquare/></a>
+            <a className="primary-text font34" href="https://twitter.com/restaurantjourn" target="_blank"><FaTwitterSquare/></a>
+          </div>
+          <p className="lhp small m-t-4">Copyright RestaurantJourneys © 2019</p>
         </div>
       </div>
     </FooterNode>
-    <div className="bg-beige p-2">
-      <p className="lhp text-center small">Copyright © 2019</p>
-    </div>
   </>
 )
 

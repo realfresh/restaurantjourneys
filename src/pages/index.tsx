@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import { Header } from "../components/header"
 import styled from "styled-components"
 import { graphql, Link, PageRendererProps } from "gatsby"
+import { Tag } from "../components/tag"
 
 const Post = styled("div")`
   height: 100%;
@@ -46,6 +47,7 @@ interface Props extends PageRendererProps {
           documentMeta: string
           updatedAt: string
           createdAt: string
+          category: string
         }
       }>
     }
@@ -58,16 +60,16 @@ const Page = (props: Props) => {
 
   return (
     <Index>
-      <SEO title="Home"/>
+      <SEO title="Restaurant Journeys | Start, Manage, Market & Grow Your Business" titleRaw={true}/>
       <Header>
         <div className="text-center m-b-6">
-          <h1>Start Your Restaurant Journey</h1>
+          <h1>Start, Manage, Market & Grow Your Restaurant</h1>
           <p className="bigger lhp m-t-3">Learn how to start, manage and grow your restaurant business with helpful content</p>
         </div>
       </Header>
       <MainNode>
         <div className="content">
-          <h2 className="m-b-5 font-bold big">Latest Blog Posts</h2>
+          <h2 className="font20 m-b-5">Latest Blog Posts</h2>
           <div className="grid-3 lg md-gap">
             {props.data.allContentfulBlogArticle.edges.map(({ node }, i) => (
               <div key={i} className="col">
@@ -75,8 +77,9 @@ const Page = (props: Props) => {
                   <Post>
                     <h3>{node.title}</h3>
                     <p className="m-t-2 lhp">{node.documentMeta}</p>
-                    <div className="bottom">
-                      <p className="text-right smaller m-t-3 font-bold">{new Date(node.createdAt).toLocaleDateString()}</p>
+                    <div className="bottom flex-l-r-center">
+                      <Tag className="smaller m-t-3">{node.category}</Tag>
+                      <Tag className="smaller m-t-3">{new Date(node.createdAt).toLocaleDateString()}</Tag>
                     </div>
                   </Post>
                 </Link>
@@ -104,6 +107,7 @@ export const query = graphql`
           documentMeta
           updatedAt
           createdAt
+          category
         }
       }
     }

@@ -12,13 +12,7 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136973579-1"/>
-        <script dangerouslySetInnerHTML={{ __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
-          gtag('config', 'UA-136973579-1');
-        `}}/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"/>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
@@ -31,7 +25,6 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
-        <script async defer src="https://cdn.commento.io/js/commento.js"/>
         <script async defer type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c99dd1909b4b4eb"/>
       </body>
     </html>

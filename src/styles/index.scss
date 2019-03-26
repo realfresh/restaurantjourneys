@@ -63,8 +63,7 @@ $widths-list: (
 );
 
 $font-size: 16px;
-$font-heading: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$font-heading: 'Lato', sans-serif;
 $font-body: Arial, Helvetica, sans-serif;
 $primary-color: #C34545;
 
@@ -80,3 +79,10 @@ $primary-color: #C34545;
 
 @import "pages";
 
+.primary-text {
+  color: $primary-color;
+}
+
+.text-light-gray {
+  color: gray;
+}
