@@ -1,6 +1,8 @@
 
 const path = require("path");
 
+const replacePath = path => (path === `/` ? path : path.replace(/\/$/, ``))
+
 exports.createPages = ({ graphql, actions }) => {
 
   const { createPage } = actions
@@ -25,6 +27,7 @@ exports.createPages = ({ graphql, actions }) => {
       const posts = result.data.allContentfulBlogArticle.edges;
 
       posts.forEach(({ node }) => {
+        console.log(node);
         createPage({
           path: "/blog/" + node.permalink,
           component: path.resolve(`./src/templates/blog_post.tsx`),
@@ -37,4 +40,18 @@ exports.createPages = ({ graphql, actions }) => {
     })
   })
 
+}
+
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage, deletePage } = actions
+
+  const oldPage = Object.assign({}, page)
+  // Remove trailing slash unless page is /
+  page.path = replacePath(page.path)
+  console.log(page.path);
+  if (page.path !== oldPage.path) {
+    // Replace new page with old page
+    deletePage(oldPage)
+    createPage(page)
+  }
 }
