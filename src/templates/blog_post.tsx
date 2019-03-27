@@ -85,6 +85,9 @@ const ArticleSection = styled("article")`
     max-width: 100%;
     height: auto;
   }
+  b, strong {
+    font-weight: 600;
+  }
 `
 
 export default ({ data, location }: Props) => {
