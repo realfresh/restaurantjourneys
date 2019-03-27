@@ -74,7 +74,7 @@ const Page = (props: Props) => {
       </Header>
       <MainNode>
         <div className="content">
-          <h2 className="font20 m-b-5">Latest Blog Posts</h2>
+          <h2 className="font20 m-b-5">Blog Posts</h2>
           <div className="grid-3 lg md-gap">
             {props.data.allContentfulBlogArticle.edges.map(({ node }, i) => (
               <div key={i} className="col">
@@ -103,7 +103,7 @@ const Page = (props: Props) => {
 
 export const query = graphql`
   query PageQuery {
-    allContentfulBlogArticle(sort: { order: DESC fields: createdAt }) {
+    allContentfulBlogArticle(sort: { order: DESC fields: updatedAt }) {
       totalCount
       edges {
         node {

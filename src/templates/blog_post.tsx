@@ -65,6 +65,9 @@ const ArticleSection = styled("article")`
     li {
       font-size: 16px !important;
       line-height: 1.6;
+      p {
+        margin: 0;
+      }
     }
   }
   pre {
